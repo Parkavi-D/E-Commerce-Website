@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TRENDY SHOP</h1>
+        <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+    </header>
+    <main>
+        <div class="product">
+            <img src="image29.jpeg" alt="Product 1">
+            <h2>Cotton</h2>
+            <p>Simple Cotton Kurthi</p>
+            <p>Price: $20.88</p>
+            <button onclick="addToCart('Cotton', 20.88)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image23.jpeg" alt="Product 1">
+            <h2>Cotton chudithar</h2>
+            <p>Geet Cotton Blend with Weaving & Embroidery Salwar Suit</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart('Cotton chudithar', 19.99)">Add to Cart</button>
+        </div>
+                <div class="product">
+            <img src="image30.jpeg" alt="Product 1">
+            <h2>Kurthi</h2>
+            <p>Trendy Cotton Kurthi</p>
+            <p>Price: $23</p>
+            <button onclick="addToCart('kurthi', 23)">Add to Cart</button>
+        </div>
+                <div class="product">
+            <img src="image27.jpeg" alt="Product 1">
+            <h2>salwar</h2>
+            <p>fabulaous Kurthi design</p>
+            <p>Price: $30</p>
+            <button onclick="addToCart('salwar', 30)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="imag2.jpeg" alt="Product 1">
+            <h2>Straight kurtha</h2>
+            <p>Trendy Kurthi</p>
+            <p>Price:$24</p>
+            <button onclick="addToCart('Straight kurtha', 24)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="download.jpeg" alt="Product 1">
+            <h2>Anarkali</h2>
+            <p>Designer Fabulaous Rama Gown</p>
+            <p>Price:$25</p>
+            <button onclick="addToCart('Anarkali', 25)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image9.jpeg" alt="Product 1">
+            <h2>Kurtha</h2>
+            <p>Simple Frock Design</p>
+            <p>Price:$ 19</p>
+            <button onclick="addToCart('kurtha', 19)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images3.jpeg" alt="Product 1">
+            <h2>salwar</h2>
+            <p>Simple Frock Design.</p>
+            <p>Price: $25</p>
+            <button onclick="addToCart('Punjabi salwar suit', 25)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image6.jpeg" alt="Product 1">
+            <h2>Cottton kurthi</h2>
+            <p>Geet Cotton Blend with Weaving & Embroidery Salwar Suit</p>
+            <p>Price: $30</p>
+            <button onclick="addToCart('Cotton kurthi', 30)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="ima.jpeg" alt="Product 1">
+            <h2>Straight cut salwar</h2>
+            <p>Description of Product 1.</p>
+            <p>Price: $23</p>
+            <button onclick="addToCart('Punjabi salwar suit', 33.89)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image11.jpeg" alt="Product 1">
+            <h2>Kurtha</h2>
+            <p>Plain Kurti Designs</p>
+            <p>Price: $34.77</p>
+            <button onclick="addToCart('kurtha', 34.77)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image12.jpeg" alt="Product 1">
+            <h2>Straight cut salwar</h2>
+            <p>Simple Kurthi design</p>
+            <p>Price:$28.00</p>
+            <button onclick="addToCart('Straight cut salwar', 28.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image13.jpeg" alt="Product 1">
+            <h2>Punjabi salwar suit</h2>
+            <p>Geet Cotton Blend with Weaving & Embroidery Salwar Suit</p>
+            <p>Price: $31.33</p>
+            <button onclick="addToCart('Punjabi salwar suit', 31.33)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image14.jpeg" alt="Product 1">
+            <h2>Punjabi salwar suit</h2>
+            <p>Plain Kurti Designs</p>
+            <p>Price: $33.89</p>
+            
+            <button onclick="addToCart('Punjabi salwar suit', 33.89)">Add to Cart</button>
+        </div>
+        <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here dynamically -->
+        </ul>
+    </div>
+        <div class="features">
+        <div class="feature">
+            <noscript><img decoding="async" src="./img/shipping.png" alt="" class="featureIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/shipping.png" alt="" class=" lazy  featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <noscript><img decoding="async" class="featureIcon" src="./img/return.png" alt=""></noscript><img decoding="async" class=" lazy  featureIcon" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <noscript><img decoding="async" class="featureIcon" src="./img/gift.png" alt=""></noscript><img decoding="async" class=" lazy  featureIcon" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <noscript><img decoding="async" class="featureIcon" src="./img/contact.png" alt=""></noscript><img decoding="async" class=" lazy  featureIcon" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+        <!-- Add more product listings here -->
+    </main>
+    <footer>
+    <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <noscript><img decoding="async" src="./img/facebook.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/facebook.png" alt="" class=" lazy  fIcon">
+                    <noscript><img decoding="async" src="./img/twitter.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/twitter.png" alt="" class=" lazy  fIcon">
+                    <noscript><img decoding="async" src="./img/instagram.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/instagram.png" alt="" class=" lazy  fIcon">
+                    <noscript><img decoding="async" src="./img/whatsapp.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/whatsapp.png" alt="" class=" lazy  fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
